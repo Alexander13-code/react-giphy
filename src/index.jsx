@@ -1,18 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import App from './components/app';
 
 import '../assets/stylesheets/application.scss';
 
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
+// const root = document.getElementById('root');
+// if (root) {
+//   ReactDOM(
+//     <App />,
+//     root
+//   );
+// }
 
-const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
-}
+createRoot(document.getElementById('root')).render(
+  <App />
+);
