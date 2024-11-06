@@ -3,7 +3,7 @@ import Gif from './gif';
 
 function GifList (props) {
   function renderList () {
-    return props.gifs.map(gif => <Gif id={gif.id} key={gif.id} />);
+    return props.gifs.map(gif => <Gif id={gif} key={gif} />);
   }
 
   return (
